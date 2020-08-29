@@ -1,0 +1,531 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* <!-- ========== Navbar =========  --> */
+
+.navbar{
+    height: 100px;
+    width:100%;
+    position: relative;
+    box-shadow: 5px 0 5px grey;
+    font-family: serif;
+}
+.navbar .navbar-header{
+    display: inline;
+}
+.navbar .navbar-header .navbar-logo{
+    display: inline-block;
+}
+.navbar .navbar-header .navbar-logo img{
+    display: inline-block;
+    width: 97px;
+    padding: 10px;
+}
+.navbar .navbar-links{
+    float: right;
+    margin-right: 1%;
+    position: relative;
+    top: 10px;
+}
+.navbar .navbar-links ul li{
+    display: inline-block;
+    list-style: none;
+}
+.navbar .navbar-links ul li a{
+    font-size: 18px;
+    padding: 17px;
+    text-decoration:none;
+    color: #285b75;
+}
+.navbar .navbar-links ul li .fa-search{
+    font-size: 20px;
+}
+.navbar .navbar-links ul li button{
+    background-color: #fcbf14;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: all 0.3s ease-in;
+
+}
+
+/* <!-- ========== Navbar ends =========  --> */
+
+
+/* <!-- ========== slider=========  --> */
+
+.slider img{
+    width: 100%;
+    height: 540px;
+}
+
+.slider .welcome-box {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* bottom: 190px; */
+    /* right: 400px; */
+  background-color: white;
+  opacity: 0.5;
+  color: black;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding: 30px;
+  margin: auto;
+  text-align: center;
+  border-radius: 20px;
+}
+.slider .welcome-box h2{
+    font-size: 35px;
+    font-weight: 700;
+}
+.slider .welcome-box p{
+    font-size: 25px;
+    font-weight: 600;
+}
+.slider .welcome-box button{
+    border: none;
+    background-color:grey ;
+    color: white;
+    padding: 7px;
+    border-radius: 8px;
+}
+
+/* <!-- ========== slider end =========  --> */
+
+
+/* <!-- ========== Main section =========  --> */
+
+.main-section{
+    padding: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+    
+}
+.main-section .section1 , .section2 , .section3 , .section4 , .section5 , .section6{
+display: block;
+width: 100%;
+}
+
+/* <!-- ========== Section1 =========  --> */
+
+.main-section .section1 .our-mission{
+    display: inline-block;
+    width: 50%;
+    flex:0 0 50%;
+
+}
+.main-section .section1 .our-mission .yellow{
+font-size: 39px;
+color: #fcbf14;
+font-weight: 600;
+font-family: serif;
+}
+.main-section .section1 .our-mission .blue{
+    font-size: 39px;
+    font-weight: 600;
+    color: #285b75;
+    font-family: serif;
+}
+.main-section .section1 .our-mission p{
+text-align: justify;
+font-size: 20px;
+word-spacing: 4px;
+line-height:35px;
+}
+.main-section .section1 .login{
+    display: inline-block;
+width: 48% ;
+flex:0 0 50%;
+padding-left: 40px;
+position: relative;
+bottom: 5px;
+}
+.main-section .section1 .login .head{
+    background-color: #eee;
+    border: 1px solid lightgrey;
+    padding: 10px;
+    font-family: serif;
+}
+.main-section .section1 .login .body{
+    background-color: #014366;
+    padding: 20px;
+    color: white;
+    text-align:justify;
+    padding-left: 55px;
+    width: 100%;
+    overflow-x: hidden;
+}
+.main-section .section1 .login .body .email, .password{
+    padding: 10px;
+    font-size: 17px;
+    font-family: serif;
+}
+.main-section .section1 .login .body .email input,  .password input{
+   border: none;
+    border-radius: 5px;
+    padding: 5px;
+    width: 50%;
+}
+
+.main-section .section1 .login .body .b{
+    position: relative;
+    left: 30px;
+}
+.main-section .section1 .login .body .c{
+position: relative;
+left: 130px;
+padding: 10px;
+}
+.main-section .section1 .login .body .c .input{
+font-size: 17px;
+font-family: serif;
+}
+.main-section .section1 .login .body .c button{
+background-color: #fcbf14;
+border: none;
+border-radius: 4px;
+padding: 5px;
+padding-left: 10px;
+padding-right: 10px;
+font-size: 16px;
+margin-bottom: 10px;
+margin-top: 10px;
+margin-right: 10px;
+}
+.main-section .section1 .login .body .c span a{
+color: #fcbf14;
+text-decoration:none;
+}
+
+/* <!-- ========== Section1 end =========  --> */
+
+
+/* <!-- ========== Section2 , section 4 , section 6 =========  --> */
+
+.main-section .section2 .marketing , .section4 .resources , .section6 .event{
+    display: inline-block;
+    max-width: 70%;
+    background-color: #014366;
+    border: 4px solid #fcbf14;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    padding-bottom:120px;
+margin-top: 50px;
+}
+.main-section .section2 .img , .section4 .img,  .section6 .img{
+    display: inline-block;
+max-width:25%;
+margin-left: 30px;
+border: 4px solid #fcbf14;
+}
+.main-section .section2 .img{
+position: relative;
+bottom: 18px;
+}
+.main-section .section4 .img{
+    position: relative;
+    top: 6px;
+}
+.main-section .section6 .img{
+    position: relative;
+bottom: 6px;
+}
+.main-section .section2 .img .img-wrapper img{
+    width: 100%;
+    height: 320px;
+}
+.main-section .section4 .img .img-wrapper img{
+    width: 100%;
+    height:280px;
+}
+.main-section .section6 .img .img-wrapper img{
+    width: 100%;
+    height: 300px;
+}
+
+/* <!-- ========== Section2 , section 4 , section 6 ends =========  --> */
+
+
+/* <!-- ========== Section2 , section 5  =========  --> */
+
+.main-section .section3 .operations , .section5 .development{
+display: inline-block;
+max-width: 70%;
+background-color: #014366;
+border: 4px solid #fcbf14;
+color: white;
+text-align: center;
+padding: 40px;
+margin-left: 30px;
+padding-bottom:120px;
+
+}
+.section5{
+    margin-top: 50px;
+}
+.section3{
+    margin-top: 30px;
+}
+.main-section  .section3 .img , .section5 .img{
+    display: inline-block;
+    max-width:25%;
+    border: 4px solid #fcbf14;
+    
+}
+.main-section  .section3 .img .img-wrapper img{
+width: 100%;
+height: 277px;
+}
+.main-section  .section5 .img .img-wrapper img{
+    width: 100%;
+    height:297px;
+}
+.main-section  .section3 .img {
+    position: relative;
+    top: 5px;
+}
+.main-section  .section5 .img {
+    position: relative;
+    bottom: 8px;
+}
+
+.main-section  .section4 .img img{
+width: 300px;
+height: 280px;
+}
+
+/* <!-- ========== Section2 , section 5  ends=========  --> */
+
+
+/* <!-- ========== footer =========  --> */
+
+
+.footer{
+    background-color: #014366;
+    padding-top: 36px;
+    padding-bottom: 25px;
+}
+.footer .social-links{
+    align-items: center;
+    text-align:center;
+}
+.footer .social-links i{
+    color: slateblue;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 7px;
+    line-height: 30px;
+/* margin-top: 40px; */
+margin-left: 10px;
+font-size: 19px;
+}
+.footer .copyright{
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+.footer .copyright img{
+margin-bottom: 5px;
+}
+
+/* <!-- ========== footer end =========  --> */
+
+
+/* <!-- ========== responsive =========  --> */
+
+@media (max-width:1250px){
+    /* .slider .welcome-box{ */
+        /* position: absolute; */
+        /* right: 300px; */
+    /* } */
+}
+@media (max-width:1200px){
+    .main-section{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media (max-width:1050px){
+    .main-section{
+        padding-left: 100px;
+        padding-right: 100px;
+
+    }
+    /* .slider .welcome-box{ */
+        /* position: absolute; */
+        /* right: 230px; */
+    /* } */
+.main-section .section1 .our-mission{
+    width: 100%;
+}
+    
+.main-section .section1 .login{
+width: 107%;
+position: relative;
+right: 35px;
+}
+.main-section .section2 .img{
+    position: relative;
+    bottom: 37px;
+}
+.main-section .section2 .img .img-wrapper img{
+    height: 370px;
+}
+.main-section .section3 .img{
+    position: relative;
+    top: -8px;
+}
+.main-section .section3 .img .img-wrapper img{
+    height: 300px;
+}
+.main-section .section4 .img{
+    position: relative;
+    top:-20px;
+}
+.main-section .section4 .img .img-wrapper img{
+    height: 320px;
+}
+.main-section .section5 .img , .section6 .img{
+    position: relative;
+    top:-30px;
+}
+.main-section .section5 .img .img-wrapper img{
+    height: 347px;
+}
+.main-section .section6 .img .img-wrapper img{
+    height: 347px;
+}
+}
+@media (max-width:960px){
+    /* .slider .welcome-box{ */
+        /* position: absolute; */
+        /* right: 180px; */
+    /* } */
+}
+@media (max-width:890px){
+    .main-section .section2 .marketing{
+        max-width: 100%;
+        padding-bottom: 30px;
+    }
+    .main-section .section3 .operations{
+        max-width: 100%;
+        margin-left: 0;
+        padding-bottom: 30px;
+
+    }
+
+    .main-section .section4 .resources{
+        max-width: 100%;
+        padding-bottom: 30px;
+
+    }
+
+    .main-section .section5 .development{
+        max-width: 100%;
+        margin-left: 0;
+        padding-bottom: 30px;
+        
+    }
+
+    .main-section .section6 .event{
+        max-width: 100%;
+        padding-bottom: 30px;
+
+    }
+
+    .main-section .section2 .img{
+        display: none;
+    }    
+    .main-section .section3 .img{
+        display: none;
+
+    }
+    .main-section .section4 .img{
+        display: none;
+
+    }
+    .main-section .section5 .img{
+        display: none;
+
+    }
+    .main-section .section6 .img{
+        display: none;
+
+    }
+}
+@media (max-width:700px){
+    .main-section{
+        padding-left: 45px;
+        padding-right: 45px;
+    }
+.main-section .section1 .login .body .c{
+position: relative;
+left: 0px;
+}
+.slider .welcome-box{
+position: absolute;
+top: 70%;
+width: 80%;
+}
+}
+@media (max-width:500px){
+.slider .welcome-box{
+    width: 95%;
+
+}
+}
+@media (max-width:450px){
+    .main-section .section1 .our-mission p{
+        font-size: 16px;
+        line-height:25px;
+        padding: 10px;
+    }
+    .main-section .section1 .our-mission .yellow{
+        font-size: 31px;
+}
+.main-section .section1 .our-mission .blue{
+    font-size: 31px;
+}
+.main-section .section1 .login .body{
+    padding-left: 20px;
+}
+.main-section{
+    padding-left: 5px;
+    padding-right: 5px;
+    overflow: hidden;
+}
+.main-section .section2 .marketing{
+padding: 25px;
+margin-bottom: 15px;
+}
+.main-section .section3 .operations{
+    padding: 25px;
+}
+.main-section .section4 .resources{
+    padding: 25px;
+}
+.main-section .section5 .development{
+    padding: 25px;
+}
+.main-section .section4 .event{
+    padding: 25px;
+}
+}
+@media (max-width:350px){
+    .footer .copyright span{
+        font-size: 12px;
+    }
+}
+
+/* <!-- ========== responsive end=========  --> */
